@@ -16,33 +16,34 @@
     <!-- Header Content -->
     <header>
         <!-- Start Button -->
-        <button type="button" class="btn btn-primary">Start</button>
+        <button type="button" class="btn btn-primary" id="startBtn">Start</button>
         <!-- Time Remaining Placeholder-->
         <p id="timeRemaining">Time Remaining: <span id="time-remaining"></span></p>
     </header>
 
     <!-- Main Container -->
-    <main class="current-card">
+    <container class="current-card">
         <div class="card">
             <div class="card-header">
+              <!-- Question Number -->
               <h2 id="question-number">Question Number</h2>
             </div>
             <div class="card-body">
+              <!-- Question -->
               <h5 class="card-title">Question</h5>
-              
+              <!-- Answer Buttons -->
               <p class="answers"><a class="btn btn-primary answerBtns" id="option1">Option 1</a>Answer One</p>
-              <br> 
               <p class="answers"><a class="btn btn-primary answerBtns" id="option2">Option 2</a> Answer Two</p>
-              <br>
               <p class="answers"><a class="btn btn-primary answerBtns" id="option3">Option 3</a>Answer Three</p>
-              <br>
               <p class="answers"><a class="btn btn-primary answerBtns" id="option4">Option 4</a>Answer Four</p>
+              <!-- Next Button -->
+              <a class="btn btn-primary" id="nextBtn">Next</a> 
             </div>
             <div class="card-footer">
                 <h2 id="grade">Correct/Incorrect</h2>
               </div>
         </div>
-    </main>
+      </container>
 
 
 
