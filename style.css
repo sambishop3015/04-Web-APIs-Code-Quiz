@@ -39,16 +39,20 @@ p {
 }
 
 :root {
-    --hue-neutral: 200, 100%, 97%;
+    /* --hue-neutral: 200, 100%, 97%; */
     --hue-correct: 145, 100%, 20%;
     --hue-wrong: 0, 100%, 35%;
 }
 
 div.card-footer {
-    --hue: var(--hue-wrong);
+    /* --hue: var(--hue-neutral); */
     background-color: hsl(var(--hue));
 }
 
-/* div.card-footer.correct {
+div.card-footer.correct {
     --hue: var(--hue-correct);
-} */
+}
+
+div.card-footer.wrong {
+    --hue: var(--hue-wrong);
+}
