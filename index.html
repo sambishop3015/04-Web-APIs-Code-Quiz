@@ -15,8 +15,7 @@
 <body>
     <!-- Header Content -->
     <header>
-        <!-- Start Button -->
-        <button type="button" class="btn btn-primary" id="startBtn">Start</button>
+        
         <!-- Time Remaining Placeholder-->
         <p id="timeRemaining">Time Remaining: <span id="time-remaining"></span></p>
     </header>
@@ -24,11 +23,11 @@
     <!-- Main Container -->
     <container class="current-card">
         <div class="card">
-            <div class="card-header">
+            <div class="card-header hide">
               <!-- Question Number -->
               <h2 id="question-number">Question Number</h2>
             </div>
-            <div class="card-body">
+            <div class="card-body hide">
               <!-- Question -->
               <h5 class="card-title">Question</h5>
               <!-- Answer Buttons -->
@@ -36,12 +35,16 @@
               <p class="answers"><a class="btn btn-primary answerBtns" id="option2">Option 2</a> Answer Two</p>
               <p class="answers"><a class="btn btn-primary answerBtns" id="option3">Option 3</a>Answer Three</p>
               <p class="answers"><a class="btn btn-primary answerBtns" id="option4">Option 4</a>Answer Four</p>
-              <!-- Next Button -->
-              <a class="btn btn-primary" id="nextBtn">Next</a> 
             </div>
-            <div class="card-footer">
-                <h2 id="grade">Correct/Incorrect</h2>
-              </div>
+            <div class="controls">  
+              <!-- Start Button -->
+              <button type="button" class="btn btn-primary start-btn" id="start-btn">Start</button>
+              <!-- Next Button -->
+              <button class="btn btn-primary hide" id="nextBtn">Next</button> 
+            </div>
+            <div class="card-footer hide">
+              <h2 id="grade">Correct/Incorrect</h2>
+            </div>
         </div>
       </container>
 

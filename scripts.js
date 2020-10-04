@@ -1,15 +1,29 @@
 //Make sure the html is loaded before running script
 $(document).ready(function() {
 
-    // Create variables
+    // Get start button by ID
+    const startButton = document.getElementById('start-btn');
 
-    // Create arrays for questions
+    // Listen for start button click
+    $(startButton).on('click', startGame)
+    
+    // Function to start game
+    function startGame() {
+        console.log('Started');
+    }
+
+    // Function to switch to next question
+    function setNextQuestion(){
+
+    }
+
+    // Answer function
+    function selectAnswer(){
+
+    }
 
 
 
 
 
-
-
-
-}
+});
