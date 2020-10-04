@@ -21,31 +21,44 @@
     </header>
 
     <!-- Main Container -->
-    <container class="current-card">
+      <container class="current-card">
+        
         <div class="card">
-            <div class="card-header hide">
-              <!-- Question Number -->
-              <h2 id="question-number">Question Number</h2>
-            </div>
-            <div class="card-body hide">
-              <!-- Question -->
-              <h5 class="card-title">Question</h5>
-              <!-- Answer Buttons -->
-              <p class="answers"><a class="btn btn-primary answerBtns" id="option1">Option 1</a>Answer One</p>
-              <p class="answers"><a class="btn btn-primary answerBtns" id="option2">Option 2</a> Answer Two</p>
-              <p class="answers"><a class="btn btn-primary answerBtns" id="option3">Option 3</a>Answer Three</p>
-              <p class="answers"><a class="btn btn-primary answerBtns" id="option4">Option 4</a>Answer Four</p>
-            </div>
-            <div class="controls">  
-              <!-- Start Button -->
-              <button type="button" class="btn btn-primary start-btn" id="start-btn">Start</button>
-              <!-- Next Button -->
-              <button class="btn btn-primary hide" id="nextBtn">Next</button> 
-            </div>
-            <div class="card-footer hide">
-              <h2 id="grade">Correct/Incorrect</h2>
-            </div>
+            
+          <!-- Question -->
+          <div class="card-header hide" id="card-header">
+            <h2 id="question-number">Question Number</h2>
+          </div>
+          
+          <!-- Answer Buttons -->
+          <!-- <div class="card-body hide" id="answer-buttons">
+            <p class="answers"><a class="btn btn-primary answerBtns" id="btn">A</a>Answer One</p>
+            <p class="answers"><a class="btn btn-primary answerBtns" id="btn">B</a> Answer Two</p>
+            <p class="answers"><a class="btn btn-primary answerBtns" id="btn">C</a>Answer Three</p>
+            <p class="answers"><a class="btn btn-primary answerBtns" id="btn">D</a>Answer Four</p>
+          </div> -->
+
+          <div class="btn-grid hide" id="answer-buttons">
+            <button class="btn">A</button>
+            <button class="btn">B</button>
+            <button class="btn">C</button>
+            <button class="btn">D</button>
+          </div>
+          
+          <div class="card-footer hide" id="card-footer">
+            <h2 id="grade">Correct/Incorrect</h2>
+          </div>
+
+          <div class="controls">  
+            <!-- Start Button -->
+            <button type="button" class="" id="start-btn">Start</button>
+            <!-- Next Button -->
+            <button type="button" class="hide" id="nextBtn">Next</button> 
+          </div>
+          
+          
         </div>
+      
       </container>
 
 

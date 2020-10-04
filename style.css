@@ -1,7 +1,6 @@
-#startBtn, #nextBtn {
+#start-btn, #nextBtn {
     font-weight: bolder;
     background: green;
-    margin-bottom: 5px;
 }
 
 #nextBtn {
@@ -9,7 +8,7 @@
     margin-right: 5px;
 }
 
-#startBtn {
+#start-btn {
     margin-left: 5px;
 }
 
@@ -30,22 +29,26 @@
   }
 
 .card {
-    width: auto;
+    width: 600px;
     margin: auto;
     margin-top: 10%;
-    max-width: 600px;
+    max-width: 80%;
     min-width: 100%;
     box-shadow: 1px 2px 0px 0px;
 }
 
-.answerBtns {
+#card-header {
+    
+}
+
+.btn-grid {
     display: grid;
     margin: 5px;
 }
 
-p {
+/* p {
     text-align: left;
-}
+} */
 
 :root {
     /* --hue-neutral: 200, 100%, 97%; */
@@ -53,19 +56,20 @@ p {
     --hue-wrong: 0, 100%, 35%;
 }
 
-div.card-footer {
+#card-footer {
     /* --hue: var(--hue-neutral); */
     background-color: hsl(var(--hue));
 }
 
-div.card-footer.correct {
+#card-footer.correct {
     --hue: var(--hue-correct);
 }
 
-div.card-footer.wrong {
+#card-footer.wrong {
     --hue: var(--hue-wrong);
 }
 
-div.hide, button.hide {
+.hide {
     display: none;
 }
+
